@@ -1,3 +1,0 @@
-# Topological Sort
-
-Topological Sort.
