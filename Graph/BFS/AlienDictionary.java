@@ -5,7 +5,6 @@ import java.util.*;
 // approach 1: bfs
 //
 
-
 public class AlienDictionary {
     public String alienOrder(String[] words) {
 
