@@ -1,2 +1,5 @@
-# lc
-lc
+# Dynamic Programming
+
+
+Dynamic Programming
+
