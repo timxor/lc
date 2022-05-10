@@ -16,33 +16,45 @@ import java.util.HashMap;
 import java.util.Map;
 
 class DetectSquares {
+
     Map<Integer, Map<Integer, Integer>> locs;
+
     public DetectSquares() {
         locs = new HashMap<>();
     }
 
     public void add(int[] point) {
+
         int x= point[0];
         int y = point[1];
+
         locs.putIfAbsent(x, new HashMap<>());
         locs.get(x).put(y, locs.get(x).getOrDefault(y, 0) + 1);
     }
 
     public int count(int[] point) {
+
         int x = point[0], y = point[1];
         if (!locs.containsKey(x)) return 0;
         int ret = 0;
+
         for (int key : locs.get(x).keySet()) {
+
             if (y == key) continue;
             int len = Math.abs(y - key);
+
             if (locs.containsKey(x - len)) {
+
                 if (locs.get(x - len).containsKey(key) && locs.get(x - len).containsKey(y)) {
+
                     ret += locs.get(x).get(key) * locs.get(x - len).get(key) * locs.get(x - len).get(y);
                 }
             }
 
             if (locs.containsKey(x + len)) {
+
                 if (locs.get(x + len).containsKey(key) && locs.get(x + len).containsKey(y)) {
+
                     ret += locs.get(x).get(key) * locs.get(x + len).get(key) * locs.get(x + len).get(y);
                 }
             }
