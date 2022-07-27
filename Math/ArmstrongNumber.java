@@ -48,4 +48,8 @@ public class ArmstrongNumber {
         return isArmstrongNumber;
     }
 
+    public static void main(String[] args){
+        System.out.println("running armstrongnumber.java");
+    }
+
 }
