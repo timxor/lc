@@ -1,7 +1,7 @@
 package Irl;
 
 public class Google {
-}
+
 
 
 /*
@@ -60,4 +60,34 @@ answer: 768
 
 
 
+
  */
+public static void main(String[] args){
+
+
+    System.out.println("---------------------------------------------------------------------------------");
+    System.out.println("\nrunning /code/lc/Irl/Google.java.\n");
+    System.out.println("---------------------------------------------------------------------------------");
+    System.out.println("" +
+            "question 3:\n" +
+            "\n" +
+            "create a maximum number through concatenation using k digits given an array of n digits.\n" +
+            "digits must remain in relative order that they were given\n" +
+            "\n" +
+            "example:\n" +
+            "n = 6 3 7 4 5 2 6 1 8\n" +
+            "k = 3\n" +
+            "answer: 768");
+    System.out.println("---------------------------------------------------------------------------------");
+    System.out.println("must be better then O( N * K) ... ");
+    System.out.println("---------------------------------------------------------------------------------");
+
+
+
+
+
+
+
+}
+
+}
