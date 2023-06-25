@@ -1,6 +1,9 @@
 //
 // Reverse_Integer_7 [here](https://leetcode.com/problems/reverse-integer/description/)
 //
+// https://chat.openai.com/share/8cfa23be-1e5c-4cf0-8816-16fd12493ba9
+// https://chat.openai.com/share/cf548bd7-9a49-49a8-bfab-61b23328d8c8
+// https://github.com/timxor/lc
 //
 
 class Reverse_Integer_7 {
