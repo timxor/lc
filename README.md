@@ -11,7 +11,7 @@ date: 06/25/2023
 
 problems:
   - 7. Reverse Integer [here](https://leetcode.com/problems/reverse-integer/description/)
-
+  - 8. String to Integer (atoi) https://leetcode.com/problems/string-to-integer-atoi/
 
 ------------------------------------------------------------------
 
