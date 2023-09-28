@@ -13,13 +13,17 @@ import java.util.HashMap;
 
 public class ApexClearing
 {
-
-//    public void connect(InetAddress ipaddress, int port) throws IOException {
-//
-//        Socket endpoint = new Socket(ipaddress, port);
-//    }
-//
-
+    public void connect(InetAddress ipaddress, int port) throws IOException {
+        Socket endpoint = new Socket(ipaddress, port);
+    }
+    public static void init(){
+        System.out.println();
+        System.out.println("Starting ApexClearning.java");
+        System.out.println();
+        System.out.println("Stopping ApexClearning.java");
+        System.out.println();
+    }
+    
     public static void main(String[] args) throws UnknownHostException {
 
         HashMap<String, HashMap<String, Integer[]>> tickerToExchangeToPrice = new HashMap<String, HashMap<String, Integer[]>>();
@@ -95,20 +99,20 @@ public class ApexClearing
         }
 
 
-//        init();
-//
-//        double bestBid = Math.max(420.71, 420.70);
-//        bestBid = Math.max(bestBid, 420.71);
-//
-//
-//        double bestOffer = Math.min(420.76, 420.75);
-//        bestOffer = Math.min(bestOffer, 420.75);
+        init();
+
+        double bestBid = Math.max(420.71, 420.70);
+        bestBid = Math.max(bestBid, 420.71);
+
+
+        double bestOffer = Math.min(420.76, 420.75);
+        bestOffer = Math.min(bestOffer, 420.75);
 
 
 //        String NBBO = symbol bestBid @ bestOffer
 
-//        System.out.println("bestOffer = "+ bestOffer);
-//        System.out.println("bestBid = "+ bestBid);
+        System.out.println("bestOffer = "+ bestOffer);
+        System.out.println("bestBid = "+ bestBid);
 
     }
 
@@ -144,35 +148,7 @@ public class ApexClearing
 
  */
 
-
-
-
-
-
-
-
-    public static void init(){
-        System.out.println();
-        System.out.println("Starting ApexClearning.java");
-        System.out.println();
-        System.out.println("Stopping ApexClearning.java");
-        System.out.println();
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
      /*
             Best Time to Buy and Sell Stock
