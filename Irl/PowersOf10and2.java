@@ -1,4 +1,8 @@
-package Irl;
+package irl;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public class PowersOf10and2 
 {
@@ -41,8 +45,9 @@ public class PowersOf10and2
     Random rand = new Random();
     List<Integer> list = new ArrayList();
     
+    
     int randomElement = list.get(rand.nextInt(list.size()));
-    array[rand.nextInt(array.size)]
+    int value = list.get(rand.nextInt(list.size()));
 
 
 
