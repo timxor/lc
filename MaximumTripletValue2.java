@@ -1,24 +1,19 @@
 public class MaximumTripletValue2 {
 
-    public long maximumTripletValue(int[] nums) {
+    // 2874. Maximum Value of an Ordered Triplet II
+// https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/
 
-        int max0 = nums[0];
-        long ans = 0L;
-        int max = Integer.MIN_VALUE;
+//    class Solution {
+        public long maximumTripletValue(int[] nums) {
 
-        for (int i = 1; i < nums.length; i++) {
+            long triplet_max = 0, pair_max = 0, max_element = 0;
 
-            if (max >= 0) {
-                ans = Math.max(ans, (long)max * (long)nums[i]);
+            for (int i : nums) {
+                triplet_max = Math.max(triplet_max, 1L * pair_max * i);
+                pair_max = Math.max(pair_max, max_element - i);
+                max_element = Math.max(max_element, i);
             }
-
-            max = Math.max(max, max0 - nums[i]);
-
-            max0 = Math.max(max0, nums[i]);
-
+            return triplet_max;
         }
-        return ans;
-
-    }
-    
+//    }
 }
