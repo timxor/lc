@@ -1,4 +1,3 @@
-
 // The Number of Beautiful Subsets
 //
 // #2597
