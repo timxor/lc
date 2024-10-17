@@ -7,17 +7,16 @@ lc: https://github.com/timxor/lc
 
 ------------------------------------------------------------------
 
+
+
+Install Java 23:
+
 ```
-sdk list java
-sdk use java 21-amzn
-sdk default java 21-amzn
+
 java --version
+sdk install java 23.0.1-amzn
+sdk default java 23.0.1-amzn
+java --version
+
+
 ```
-
-
-``` 
-javac --release 21 --enable-preview Review.java
-java --enable-preview Review
-```
-
-
