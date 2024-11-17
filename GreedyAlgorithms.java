@@ -94,12 +94,43 @@ public class GreedyAlgorithms {
         return lastIndex == 0;
     }
 
-//    int reachable = 0;
-//    for (int i = 0; i < nums.length; i++) {
-//        if (i > reachable) return false;
-//        reachable = Math.max(reachable, i + nums[i]);
-//    }
-//    return true;
+    //    int reachable = 0;
+    //    for (int i = 0; i < nums.length; i++) {
+    //        if (i > reachable) return false;
+    //        reachable = Math.max(reachable, i + nums[i]);
+    //    }
+    //    return true;
+
+
+
+    // gas station
+    // https://leetcode.com/problems/gas-station/
+    //
+
+    public int canCompleteCircuit(int[] gas, int[] cost) {
+        return -1;
+    }
+
+
+
+    // candy
+    // https://leetcode.com/problems/candy
+    //
+    public int candy(int[] ratings) {
+
+        return 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
