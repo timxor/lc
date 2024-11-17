@@ -58,6 +58,8 @@
 */
 
 
+import java.util.Arrays;
+
 public class GreedyAlgorithms {
 
     public GreedyAlgorithms() {
@@ -65,8 +67,40 @@ public class GreedyAlgorithms {
     }
 
     public static void main(String[] args) {
+
         System.out.println("Running GreedyAlgorithms.java file.");
+
+        int[] nums = {2,3,1,1,4};
+        boolean expected = true;
+        boolean result = canJump(nums);
+        System.out.println("nums[] = " + Arrays.toString(nums));
+        System.out.println("canJump(nums) = " + result + ", expected = " + expected);
+
     }
+
+
+
+    // Jump game
+    // https://leetcode.com/problems/jump-game/description/
+    // greedy approach - time o(n), space o(1)
+
+    public static boolean canJump(int[] nums) {
+        int lastIndex = nums.length - 1;
+        for (int i = lastIndex; i >= 0; i--) {
+            if (i + nums[i] >= lastIndex) {
+                lastIndex = i;
+            }
+        }
+        return lastIndex == 0;
+    }
+
+//    int reachable = 0;
+//    for (int i = 0; i < nums.length; i++) {
+//        if (i > reachable) return false;
+//        reachable = Math.max(reachable, i + nums[i]);
+//    }
+//    return true;
+
 }
 
 
