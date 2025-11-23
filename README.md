@@ -4,19 +4,18 @@
 lc: https://github.com/timxor/lc
 ------------------------------------------------------------------
 
+# Desired attributes
+
+
+## Maintain Insertion Order, No Duplicates
+
+1.
+`LinkedHashSet<String> lhs = new LinkedHashSet<>();`
+
+2.
+
+
+
+
 
 ------------------------------------------------------------------
-
-
-
-Install Java 23:
-
-```
-
-java --version
-sdk install java 23.0.1-amzn
-sdk default java 23.0.1-amzn
-java --version
-
-
-```
